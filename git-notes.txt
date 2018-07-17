@@ -1,4 +1,5 @@
 Git is a distributed version control system.
+Github is a portal where we can host our git repo
 Its Open source software
 
 View file status(git status )-----------> (Add changes to statging area)    git add --------->(Commit files to local repo) git commit --------->
@@ -13,6 +14,20 @@ big buket
 - No working tree for a remote repo
 - Remote repository ends with.git
 if you already have local repository than do git remote add otherwise create a repo in git hub and clone it to local.
+whtever we work on in local system is local repo.There are two types of repo 1)local repo 2)Remote repo.There can be any no of remote repos
+there is no central repo concept
+
+DELL@DELL-PC MINGW32 /d/Programming/git-notes (master)
+$ git remote add origin https://github.com/Manasa-1510/git-notes.git
+
+DELL@DELL-PC MINGW32 /d/Programming/git-notes (master)
+$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/Manasa-1510/git-notes.git
+  Push  URL: https://github.com/Manasa-1510/git-notes.git
+  HEAD branch: (unknown)
+
+
 
 Creating a git repository
 1)Create a repo folder (this represents the folder which will contain all the local repositories)
@@ -25,6 +40,11 @@ git init - to initialize the working tree with git
 git status - to view the status of files in the working tree and staging area
 git status -s : view short status
 git add -to add content to staging area.This takes the file name '/ directory name as argument or provide '.
+git add - u ,git add - U, git add - A, git add - all
+git checkout : this disgards the changes in the staging area and rovides copy fromm local repo
+git rm : to remove a file from staging area
+git delete: to remove from repo
+git diff : tells the chnages that are in working area compared to staging area or repo
 git commit -m: command to add the commits in staging area.This is entire snapshot of the project. -m to specify comments
 Without -m git opens an editor to enter multiline comments. to come out of it type :x!
 git log : to view the commit logs
