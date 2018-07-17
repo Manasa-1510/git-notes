@@ -52,7 +52,8 @@ git log --oneline : condensed version of git logs
 git clone: create local copy of remote repo (the project hosting provides the url)
 git remote : Provides information about remote repository associated with local repo
 git remote add:
-git push -u repository branch : 
+git push -u repository branch : push from local repository to reomte origin is the alias name for remoterepo
+git mv to rename file: git mv oldfile newfile
 A push writes commits for a branch to a remote repository
 
 Import repository
@@ -116,4 +117,4 @@ git takes of all the changes as each chnage commited creates a new hash-object
 
 git cat-file -t hash value --->This command gives the datatype
 
-
+git ignore .gitignore
