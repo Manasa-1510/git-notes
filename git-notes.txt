@@ -71,5 +71,29 @@ File states
 Ignoring untracked files
 ->Create .gitignore file
 
+commit e8c02bbb0a9210e433a0007c872134acd8c0eb22 (HEAD -> master) commit id hashkey -> value is the content
+for each commit we get a new repository
+
+To view the content giving key plumbing commands it gives infor about parent author ad committer
+$ git cat-file -p  e8c02bbb0a9210e433a0007c872134acd8c0eb22
+tree 0284922b0bd9763f17195429ff9aeff59158e054
+author Manasa <manasa.v.09@gmail.com> 1531839928 +0530
+committer Manasa <manasa.v.09@gmail.com> 1531839928 +0530
+
+Plumbing commands and postline commands(used daily)
+Two kinds of datatypes :
+Directory - tree
+Blob - leaf node or file
+the local repo data is stored as encrypted data in  .git files
+git internally uses key and value database.
+Each commit to the repo is taken as key and a hashvalue is generated which is stored as key and contentx are stored as value
+
+this command stores the hash value of the object in git database
+$ echo 'content' | git hash-object -w --stdin
+d95f3ad14dee633a758d2e331151e950dd13e4ed
+
+git takes of all the changes as each chnage commited creates a new hash-object
+
+git cat-file -t hash value --->This command gives the datatype
 
 
