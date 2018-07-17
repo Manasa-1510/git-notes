@@ -1,0 +1,75 @@
+Git is a distributed version control system.
+Its Open source software
+
+View file status(git status )-----------> (Add changes to statging area)    git add --------->(Commit files to local repo) git commit --------->
+working tree ------------------------------>staging area ------------------------------------------------> local repository == these together make (Project directory)in local
+Remote repository ==(Official project directory)
+- This is a bare repository as source of truth
+- It is a professionally manged repository hosted wither in a datacenter or in a cloud
+- It interacts with other systems like issue trackers and continous delivery pipelines.
+Hosted options:
+Github
+big buket
+- No working tree for a remote repo
+- Remote repository ends with.git
+if you already have local repository than do git remote add otherwise create a repo in git hub and clone it to local.
+
+Creating a git repository
+1)Create a repo folder (this represents the folder which will contain all the local repositories)
+2)Create a myProj a single repository
+3)run git init to initialize this as git workingtree and .git file is generated.
+
+Commands 
+touch followed by file name creates a new file
+git init - to initialize the working tree with git
+git status - to view the status of files in the working tree and staging area
+git status -s : view short status
+git add -to add content to staging area.This takes the file name '/ directory name as argument or provide '.
+git commit -m: command to add the commits in staging area.This is entire snapshot of the project. -m to specify comments
+Without -m git opens an editor to enter multiline comments. to come out of it type :x!
+git log : to view the commit logs
+git log --oneline : condensed version of git logs
+git clone: create local copy of remote repo (the project hosting provides the url)
+git remote : Provides information about remote repository associated with local repo
+git remote add:
+git push -u repository branch : 
+A push writes commits for a branch to a remote repository
+
+Import repository
+- import an existing repository from other specify the url and click import
+
+origin : Is the alias name for the git repo url
+
+Master : This is the default branch in the repository
+
+Branch : 
+All Commits belong to a branch
+By default, there is a single branch and it is called master
+
+
+Plumbing commands and Posting commands
+cat-file-p
+
+Each commit is stored in a tree structure view it by going into .git/objects
+git has two data structures - Tree(directory), blob(single/leaf/node)
+
+Git configuration with order
+- system users working on system level
+- local - working on personal projects then to configure username and email id
+- global user working on multiple projects. Using corp ID as username and email ID.This applicable for all projects
+
+Git LifeCycle
+workingarea --------->staging area----------->git directory(local repo)
+untracked->tracked->modified->staged->localrepo
+	add--------->edit---------->add
+remove<----------checkout<---------commit
+File states
+
+->Untracked
+->Tracked
+
+Ignoring untracked files
+->Create .gitignore file
+
+
+
