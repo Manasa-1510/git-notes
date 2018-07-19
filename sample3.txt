@@ -1,1 +1,2 @@
-Samle chnage
+Samle chnage 
+Editing for pull conflicts
