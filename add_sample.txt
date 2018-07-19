@@ -1,3 +1,3 @@
 Sample edit to pull 
-
 try fetch now !!
+trying fetch and merge i.e., pull
