@@ -1,3 +1,5 @@
 Do some changes now on branch :!q
 Samle chnage 
+
 Editing for pull conflicts
+Some more changes for stashing
