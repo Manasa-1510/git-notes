@@ -1,1 +1,49 @@
 This is a redme file
+Repository
+Local
+Remote
+Working directory
+Staging area
+
+remote
+add
+push
+pull
+fetch
+clone
+config
+commit -m add with message
+commit -a == add all at once
+
+Head -> master (latest commit)
+checkout - commits,branches
+git revert - one commit only.revert changes and new commit.
+git reset - more than one 
+
+remove git rm -r --cached .git 
+.gitignore
+
+
+Git branches
+
+git branch "New branch"
+git checkout -b "New branch" 
+git branch -a ->list branchesgit checkout bugs
+git branch -d "branch name"
+
+gitc checkout master
+git merge branchname
+
+Git hub
+
+create repository
+fork
+
+git init 
+git remote add origin  -- to connect github repo with git repo
+git remote -v
+
+push ,push -u
+fetch 
+pull , pull origin <name of branch>
+
